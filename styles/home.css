@@ -1,0 +1,160 @@
+.book {
+    display: flex;
+    
+    position: fixed;
+    top: calc(50% + 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page {
+    margin: 0%;
+    padding: 0%;
+    width: 500px;
+    height: 600px;
+
+    display: flex;
+    overflow: hidden;
+
+    background-color: #B48E86;
+    box-shadow: 6px 12px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+.page--left {
+    border-radius: 80px 0 0 0;
+    background-image: url("../images/pancakes.jpg");
+}
+
+.image-border {
+    width: 100%;
+    max-height: 100%;
+
+    border-radius: 62px 0 0 0;
+    border: 3px solid #FFFFFF;
+
+    margin: 29px 53px 35px 29px;
+}
+
+
+.page--right {
+    border-radius: 0 0 80px 0;
+
+    color: #FFFFFF;
+}
+
+.grid-container {
+    max-height: 100%;
+    width: auto;
+    margin: 32px 32px 40px 56px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    
+    justify-content: stretch;
+    align-content: stretch;
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    height: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    outline: 3px solid #FFFFFF;
+    outline-offset: 0;
+}
+
+.recipe-title {
+    flex-direction: row;
+    text-align: start;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.complexity {
+    font-size: 26px;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.taste {
+    font-size: 26px;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+.time-active {
+    font-size: 20px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+.time-total {
+    font-size: 20px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+.cost {
+    font-size: 20px;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+
+.rating-container {
+    margin: 0;
+    margin-bottom: 3px;
+    min-width: 350px;
+}
+
+.fa-regular {
+    width: 29px;
+    height: 29px;
+}
+
+.stats-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.item h6 {
+    margin: 0px;
+    padding: 15px;
+
+    text-align: left;
+
+    font-weight: bold;
+    font-size: 32px;
+
+    letter-spacing: 4px;
+    line-height: 1.5;
+}
+.item p {
+    margin:     0px;
+    padding: 0px;
+    text-align: center;
+    letter-spacing: 2px;
+}
